@@ -1,0 +1,20 @@
+<table class="table table-hover table-dark mb-5">
+    <tbody>
+        <tr>
+            <td>User Full Name:</td>
+            <td>{{user.first_name}} {{user.last_name}}</td>
+        </tr>
+            <td>User Email:</td>
+            <td>{{user.email}}</td>
+        </tr>
+        <tr>
+            <td>Created On:</td>
+            <td>{{user.created_at}}</td>
+        </tr>
+        <tr>
+            <td>Last Update At:</td>
+            <td>{{user.updated_at}}</td>
+        </tr>
+    </tbody>
+</table>
+<a href="/users/{{user.id}}/edit">Edit</a><span> | </span><a href="/users/{{user.id}}/delete">Delete</a>
